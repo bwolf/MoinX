@@ -1,0 +1,19 @@
+$Id: BUILDING 23 2005-03-20 19:46:03Z bwolf $
+
+When building a new version, perform the following steps:
+
+1) Read scripts/bootstrap.sh
+2) Download dependencies
+3) Edit scripts/bootstrap.sh
+4) Execute scripts/bootstrap.sh
+5) Update versioncheck.xml to reflect the new version!
+6) Update info.plist to reflect the new version!
+7) Update InfoPlist.strings to reflect the new version!
+8) Start Xcode
+9) In the build window choose Deployment
+10) Build + test
+11) Execute scripts/makedmg.sh and rename the dmg to reflect the new version!
+12) Copy the icon from MoinX.app to MoinX.X.Y.Z.dmg!
+13) Upload release.
+14) Checkout new website.
+15) Delete psd's.

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import url(styles.css);
+@import url(replace.css);
+
+body {
+    font: 10pt/1.5 "Trebuchet MS", "Arial", sans-serif;
+    text-align: center;                
+    margin: 0;
+    padding: 0;
+    color: rgb(40,40,40);
+    background-color: white;
+}
+
+#wrapper {
+    width: 720px;
+    margin: 0 auto;
+    padding: 1em;
+    padding: 0;
+    text-align: left;
+}
+
+#header {
+    width: 720px;
+    height: 160px;
+    margin-bottom: 30px;
+}
+
+#nav {
+    margin-bottom: 1.5em;
+    padding-left: 0.25em;
+    text-align: right;
+    color: #616b75;
+}
+
+#footer {
+    margin: 0 1em 1em 0;
+    text-align: right;
+}
+
+.leftcol {
+    width: 60%;
+    float: left;
+    padding-right: 3em;
+}
+
+.rightcol {}
+
+.onecol {
+    width: 60%;
+}

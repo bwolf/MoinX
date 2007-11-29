@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- $Id: index.html 27 2005-07-11 09:15:59Z bwolf $ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <title>MoinX</title>
+        <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+        <style type="text/css" media="all">@import url(layout.css);</style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1 id="logo" class="replace"><a href="/"><span></span></a></h1>
+            </div>
+
+            <div id="nav">
+                <a href="#changesstart">Changes</a>
+                &middot;
+                <a href="#download">Download</a>
+                &middot;
+                <a href="#faqstart">FAQ</a>
+                &middot;
+                <a href="#license">License</a>
+                &middot;
+                <a href="#contact">Contact</a>
+                <hr />
+            </div>
+
+            <h2 style="">Introduction</h2> 
+            <div class="leftcol">
+                <p>
+                MoinX is a Mac OS X desktop
+                <a href="http://en.wikipedia.org/wiki/Wiki"
+                title="Learn more about Wikis at Wikipedia">Wiki</a>, built
+                with ease of use in mind and rich with features. MoinX gives
+                you a full blown and unmodified
+                <a href="http://moinmoin.wikiwikiweb.de/"
+                title="A featureful wiki engine">MoinMoin</a> wiki
+                without forcing you to run a full blown web server. Instead
+                MoinX is bundled with the high performance
+                <a href="http://twistedmatrix.com/products/twisted">Twisted</a>
+                webserver.
+                </p>
+
+                <p>
+                To summarise: MoinX is ideal for keeping notes and howtos,
+                organising links and much more. Whenever I was looking into
+                something new and it took me some time to figure out how it
+                works, I wrote some short notes about it. Of course I do
+                this with MoinX.
+                </p>
+
+                <p>
+                Here is a typical screenshot showing the status menu of MoinX (you can
+                customise how MoinX will be displayed on the desktop: In the dock, in
+                the Status bar, or both). Installing MoinX works like with any OS X
+                application. You simply move the app wherever you like start using it.
+                </p>
+            </div>
+
+            <div class="rightcol">
+                <img src="statusmenu.png" width="196" height="230"
+                    alt="Screenshot of the statusmenu item"
+                    title="MoinX statusmenu (the default setting)" />
+                <br />
+                <span class="imgTitle">MoinX status menu</span>
+            </div>
+
+            <br style="clear:both;" />
+
+            <div class="onecol">
+                <p>
+                The preferences dialog allows you to choose who will be able to
+                access your wiki over the network. In addition you can specify how
+                MoinX will be displayed on your desktop and you can customise
+                certain aspects of the underlying wiki engine:
+                </p>
+
+                <div>
+                    <img src="preferences.png" width="708" height="373"
+                        alt="Screenshot of the preferences dialog"
+                        title="MoinX preferences dialog (with default settings)" />
+                    <br />
+                    <span class="imgTitle">MoinX preferences</span>
+                </div>
+
+                <br />
+
+                <p>
+                You can choose how your wiki can be reached over the network:
+                </p>
+
+                <ol>
+                    <li>
+                    A <em>private</em> wiki is only available on the local
+                    computer; it can't be accessed over the network; this
+                    is ideal if you keep private data in your wiki;
+                    (technically: it listens on 127.0.0.1).
+                    </li>
+                    <li>
+                    A <em>public</em> wiki is available to anyone who has
+                    access to your computer over the network; this can be
+                    used to make information available to others or to work
+                    together in collaboration; (technically: it listens on
+                    all addresses).
+                    </li>
+                    <li>
+                    A <em>custom</em> wikis availability depends on your
+                    network infrastructure. Here you may enter any valid IP
+                    address of your local computer and the wiki engine will
+                    listen on that address.
+                    </li>
+                </ol>
+
+                <h2>Import/Export</h2>
+                <p>
+                MoinMoin users may already know, that it is important to backup
+                the "data" directory of the wiki. MoinX gives you an export
+                function to easily export your relevant wiki data into a normal
+                &raquo;tar.gz&laquo; file, which can be moved across installations.
+                The import feature works in the opposite direction: it imports
+                pages which were exported to an archive file earlier.
+                </p>
+
+                <h2>Internationalisation</h2>
+                <p>
+                MoinX currently has support for the following languages:<br />
+                English, German.
+                </p>
+
+                <p>
+                The wiki engine (MoinMoin) has support for
+                many more languages. All wiki pages in laguages other than
+                Enlish and German have been removed to reduce the download size.
+                (i will reinclude them upon user request.)
+                </p>
+
+                <h2><a id="faqstart">FAQ</a></h2>
+                <dl id="faq">
+                    <dt>
+                        What does it look like?
+                    </dt>
+                    <dd>
+                        <p>
+                        You mean the GUI? See the screenshots above. The wiki
+                        itself looks like a plain <a 
+                        href="http://moinmoin.wikiwikiweb.de/">MoinMoin</a> wiki.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        Is MoinX free?
+                    </dt>
+                    <dd>
+                        <p>
+                        You mean, free of cost? Of course it is! You
+                        can even get the code for free and hack it, if you like.
+                        See <a href="#license">License</a> below.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        Is there any magic involved how MoinX stores the wiki
+                        pages?
+                    </dt>
+                    <dd>
+                        <p>
+                        No, just like plain moinmoin stores.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        Where are my wiki pages?
+                    </dt>
+                    <dd>
+                        <p>
+                        In
+                        <code>~/Library/Application&nbsp;Support/MoinX/Instance/data</code>
+                        </p>
+                    </dd>
+
+                    <dt>
+                        Where is MoinMoin's htdocs directory?
+                    </dt>
+                    <dd>
+                        <p>
+                        Look into MoinX.app. Use Finders &raquo;Show package contents&laquo;.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        How do I change the timezone?
+                    </dt>
+                    <dd>
+                        <p>
+                        Follow the <em>Login</em> link on the wiki frontpage and create an
+                        account. Your personal account page contains settings for the
+                        timezone offset, preferred language and display preferences.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        How do change the default theme to &raquo;rightsidebar&laquo;?
+                    </dt>
+                    <dd>
+                        <p>
+                        Open the MoinX preferences and look for a setting called
+                        <em>theme_default</em> in the table of advanced settings at the
+                        right hand side of the preferences dialog. Enter 'rightsidebar'
+                        (without the quotes) as the value and close the preferences dialog.
+                        Note, if you created a user in MoinMoin you won't see the theme change
+                        immediately, because each user has a preference for the preferred theme,
+                        which defaults to <em>modern</em>.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        How do I enable <acronym title="Access control lists">ACLs</acronym>
+                    </dt>
+                    <dd>
+                        <p>
+                        The quick answer is: it works like with plain MoinMoin; see
+                        <a href="http://moinmoin.wikiwikiweb.de/HelpOnAccessControlLists"
+                        >HelpOnAccessControlLists</a>
+                        </p>
+                        <br />
+                        <p>
+                        The longer answer is, that MoinX comes with a default setup for ACLs,
+                        that is predestined for a single user wiki. Simply register your username
+                        within MoinX and put that name into the MoinX preferences setting
+                        <em>acl_rights_before</em> instead of the predefined placeholder
+                        <em>YourLoginnameHere</em>. Nobody except you can edit pages!
+                        </p>
+                        <br />
+                        <p>
+                        The MoinMoin ACL system is rich and featurefull. Please read the
+                        details in your wiki and customise it appropriately to fit your
+                        needs.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        How do I backup my wiki regulary? Say every time I log on?
+                    </dt>
+                    <dd>
+                        <p>
+                        You need to create a cronjob for that.
+                        Simply backup your
+                        <code>~/Library/Application&nbsp;Support/MoinX/Instance/data</code> 
+                        directory. Use a line like the following in your
+                        <em>crontab(5)</em>:
+                        </p>
+                        <pre><code>@reboot tar cfz ~/backups/moinx-`date '+%Y-%m-%d'`.tar.gz &not;
+    ~/Library/Application\ Support/MoinX/Instance/data</code></pre>
+                        <p>
+                        (the character &not; is a line break that you should omit)
+                        </p>
+                    </dd>
+
+                    <dt>
+                        On startup, MoinX seems to connect to moinx.antbear.org!
+                    </dt>
+                    <dd>
+                        <p>
+                        MoinX checks if a new version is available at startup. This can
+                        be <em>disabled</em> in the preferences. MoinX loads a tiny XML file that
+                        contains just the most recent version info and the most recent
+                        download URI. The XML file looks like:
+                        </p>
+                        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+    &lt;key&gt;LatestVersion&lt;/key&gt;
+    &lt;string&gt;X.Y.Z&lt;/string&gt;
+    &lt;key&gt;LatestVersionDownloadURI&lt;/key&gt;
+    &lt;string&gt;http://mydom.tld/MoinX-X.Y.Z.dmg&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</code></pre>
+                        <p>
+                        Thats all folks. No need to worry.
+                        </p>
+                    </dd>
+                </dl>
+
+                <h2><a id="changesstart">Changes</a></h2>
+                <dl id="changes">
+                    <dt>Version 1.0.1</dt>
+                    <dd>Bugfix release:
+                        <p>
+                        Fixed a I18N1 issue with non ASCII characters in the 
+                        preferences (thanks to Roger &#197;berg who first noticed this issue).
+                        </p>
+                    </dd>
+                    <dt>Version 1.0</dt>
+                    <dd>Initial release</dd>
+                </dl>
+
+                <h2><a id="download">Download</a></h2>
+                <p>
+                MoinX requires Mac OS X 10.3 or later. The latest version 
+                of MoinX can be fetched here:
+                <a href="http://getmoinx.antbear.org/MoinX-1.0.1.dmg">MoinX 1.0.1 (dmg)</a>.
+                </p>
+
+                <p>
+                The source code can be accessed through
+                <acronym title="Subversion">SVN</acronym>:<br />
+                <strong>Anonymous SVN</strong>: <a href="svn://svn.antbear.org/moinx/trunk/">svn://svn.antbear.org/moinx/trunk/</a><br />
+                </p>
+
+                <p>
+                Older Versions:
+                <br />
+                <a href="http://getmoinx.antbear.org/MoinX-1.0.dmg">MoinX 1.0 (dmg)</a>
+                </p>
+
+                <h2><a id="license">License</a></h2>
+                <p>
+                MoinX is distributed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2 License</a>.
+                </p>
+
+                <p>
+                That is the cocoa code, the build system, the project setup, but not the
+                MoinMoin wiki engine, the Twisted framework and	libarchive.
+                </p>
+
+                <p>
+                MoinX is distributed in binary form with MoinMoin and Twisted to
+                ease installation for end users. Please note that the whole 
+                application consists of several parts that fall under different
+                licenses.
+                </p>
+
+                <p>
+                MoinMoin and Twisted are distributed in source form with different
+                licenses. MoinMoin is distributed under the "GNU GENERAL PUBLIC 
+                LICENSE" Version 2.
+                </p>
+
+                <p>
+                Twisted is distributedunder the "GNU LESSER GENERAL PUBLIC LICENSE"
+                Version 2.1.
+                </p>
+
+                <p>
+                libarchive is distributed under the BSD license.
+                </p>
+
+                <h2><a id="contact">Contact</a></h2>
+                <p>
+                MoinX is brought to you by Marcus Geiger. Feel free to contact me at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#105;&#110;&#120;&#64;&#97;&#110;&#116;&#98;&#101;&#97;&#114;&#46;&#111;&#114;&#103;">&#109;&#111;&#105;&#110;&#120;&#64;&#97;&#110;&#116;&#98;&#101;&#97;&#114;&#46;&#111;&#114;&#103;</a>
+                </p>
+            </div>
+
+            <br />
+            <hr />
+
+            <div id="footer">
+                <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#105;&#110;&#120;&#64;&#97;&#110;&#116;&#98;&#101;&#97;&#114;&#46;&#111;&#114;&#103;">&copy; 2005 M. Geiger</a>
+                &mdash;
+                <a href="http://validator.w3.org/check/referer">XHTML</a>
+                &middot;
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+                &middot;
+                <a href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://moinx.antbear.org/">508</a>
+            </div>
+        </div>
+    </body>
+</html>

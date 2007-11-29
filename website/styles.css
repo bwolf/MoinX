@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#nav a {
+    margin: 0 0.5em 0 0.25em;
+}
+
+#nav a, #footer a {
+    color: #616b75;
+    text-decoration: none;
+}
+
+#nav a:hover, #footer a:hover {
+    border-bottom: 1px solid #616b75;
+}
+
+div img {
+    vertical-align: top;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #616b75;
+    font-family: futura, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 16pt;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    margin-left: 0.25em;
+}
+
+p {
+    margin: 0.25em;
+    padding: 0.25em;
+    text-align: justify;
+}
+
+hr {
+    border: none; /* reset */
+    border-top: 1px solid #d7dadc;
+}
+
+acronym {
+    font-style: normal;
+    border: none;
+    cursor: help;
+}
+
+li {
+    margin: 0.5em 4em 1.5em 0;
+}
+
+dt {
+    margin: 0 0 0.5em 0.5em;
+    padding: 0;
+}
+
+dd {
+    margin: 0 0 1.5em 0.5em;
+    padding: 0;
+}
+
+#faq dt {
+    font-weight: bolder;
+}
+
+#faq dd {
+    font-style: italic;
+}
+
+#faq dd p {
+    margin: 0;
+    padding: 0;
+}
+
+#faq dd p em {
+    color: #616b75;
+    font-weight: bolder;
+}
+
+#faq dd code {
+    font-style: normal;
+}
+
+#changes dd {
+    padding-left: 1em;
+    font-style: italic;
+}
+
+p a {
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+p a:hover {
+    color: #bd5b6d;
+    border-bottom: 1px solid #bd5b6d;
+}
+
+.imgTitle {
+    padding-left: 0.75em;
+    font-size: smaller;
+    font-weight: bolder;
+}

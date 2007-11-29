@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.replace {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    /* hide overflow property from IE5/Mac */
+    /* \*/
+    overflow: hidden;
+    /* */
+}
+
+.replace span {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1; /*for Opera 5 and 6*/
+}
+
+#logo, #logo span {
+    width: 720px;
+    height: 160px;
+    background: url(weblogo.png) no-repeat 0 0;
+}
+
+#logo:hover, #logo span:hover {
+    width: 720px;
+    height: 160px;
+    background: url(weblogo.png) no-repeat 0 -160px;
+}

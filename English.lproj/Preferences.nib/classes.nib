@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                checkForUpdatesChanged = id; 
+                displayChanged = id; 
+                listenIPChanged = id; 
+                listenPortChanged = id; 
+                listenTypeChanged = id; 
+                rendezvousChanged = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                checkForUpdates = NSButton; 
+                display = NSPopUpButton; 
+                listenIP = NSTextField; 
+                listenPort = NSTextField; 
+                listenType = NSMatrix; 
+                rendezvous = NSButton; 
+                wikiFeaturesTableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<!-- $Id: versioncheck.xml 20 2005-02-20 21:37:35Z bwolf $ -->
+<plist version="1.0">
+<dict>
+        <key>LatestVersion</key>
+        <string>1.0.1</string>
+        <key>LatestVersionDownloadURI</key>
+        <string>http://getmoinx.antbear.org/MoinX-1.0.1.dmg</string>
+</dict>
+</plist>
