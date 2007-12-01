@@ -3,22 +3,22 @@
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
             ACTIONS = {
+                bonjourChanged = id; 
                 checkForUpdatesChanged = id; 
                 displayChanged = id; 
                 listenIPChanged = id; 
                 listenPortChanged = id; 
                 listenTypeChanged = id; 
-                rendezvousChanged = id; 
             }; 
             CLASS = PreferenceController; 
             LANGUAGE = ObjC; 
             OUTLETS = {
+                bonjour = NSButton; 
                 checkForUpdates = NSButton; 
                 display = NSPopUpButton; 
                 listenIP = NSTextField; 
                 listenPort = NSTextField; 
                 listenType = NSMatrix; 
-                rendezvous = NSButton; 
                 wikiFeaturesTableView = NSTableView; 
             }; 
             SUPERCLASS = NSWindowController; 

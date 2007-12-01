@@ -14,6 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+#import <sys/types.h>
+#import <unistd.h>
 #import <utime.h>
 #import "AppDelegate.h"
 #import "WikiModel.h"
@@ -259,6 +262,9 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
         preferenceController = [[PreferenceController alloc] initWithModel:model];
     }
     [preferenceController showWindow:self];
+	[[preferenceController window] makeKeyAndOrderFront:self];	
+	[NSApp activateIgnoringOtherApps: YES];
+
 }
 
 - (IBAction)export:(id)sender
@@ -277,6 +283,7 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     [panel setCanCreateDirectories:TRUE];
     [panel setCanSelectHiddenExtension:TRUE];
 
+	[panel setBecomesKeyOnlyIfNeeded:TRUE];
     if ([panel runModal] == NSFileHandlingPanelOKButton)
     {
         //NSLog(@"Ok: %@", [panel filename]);
@@ -313,6 +320,7 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     [panel setCanCreateDirectories:FALSE];
     [panel setCanSelectHiddenExtension:TRUE];
 
+	[panel setBecomesKeyOnlyIfNeeded:TRUE];
     if ([panel runModal] == NSFileHandlingPanelOKButton)
     {
         //NSLog(@"Ok: %@", [panel filename]);
@@ -416,6 +424,13 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
                 URLWithString:latestVersionDownloadURI]];
         }
     }
+}
+
+- (IBAction)showLog:(id)sender
+{
+	[[NSWorkspace sharedWorkspace] openFile:
+		[NSString stringWithFormat:@"/Library/Logs/Console/%u/console.log",
+			getuid()]];
 }
 
 - (IBAction)quit:(id)sender

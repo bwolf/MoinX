@@ -1,0 +1,19 @@
+diff -Naur src.orig/Twisted-2.5.0/TwistedCore-2.5.0/twisted/scripts/_twistd_unix.py src/Twisted-2.5.0/TwistedCore-2.5.0/twisted/scripts/_twistd_unix.py
+--- src.orig/Twisted-2.5.0/TwistedCore-2.5.0/twisted/scripts/_twistd_unix.py	2006-11-15 03:25:38.000000000 +0100
++++ src/Twisted-2.5.0/TwistedCore-2.5.0/twisted/scripts/_twistd_unix.py	2007-12-01 21:34:27.000000000 +0100
+@@ -144,10 +144,11 @@
+     os.close(null)
+ 
+ def shedPrivileges(euid, uid, gid):
+-    if uid is not None or gid is not None:
+-        switchUID(uid, gid, euid)
+-        extra = euid and 'e' or ''
+-        log.msg('set %suid/%sgid %s/%s' % (extra, extra, uid, gid))
++    #if uid is not None or gid is not None:
++    #    switchUID(uid, gid, euid)
++    #    extra = euid and 'e' or ''
++    #    log.msg('set %suid/%sgid %s/%s' % (extra, extra, uid, gid))
++    pass
+ 
+ def launchWithName(name):
+     if name and name != sys.argv[0]:

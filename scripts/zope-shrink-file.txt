@@ -1,0 +1,5 @@
+exceptions/tests
+interface/_zope_interface_coptimizations.so
+interface/common/tests
+interface/tests
+testing

@@ -21,7 +21,7 @@
     IBOutlet NSMatrix       *listenType;
     IBOutlet NSTextField    *listenIP;
     IBOutlet NSTextField    *listenPort;
-    IBOutlet NSButton       *rendezvous;
+    IBOutlet NSButton       *bonjour;
     IBOutlet NSPopUpButton  *display;
     IBOutlet NSButton       *checkForUpdates;
     IBOutlet NSTableView    *wikiFeaturesTableView; 
@@ -35,7 +35,7 @@
 - (IBAction)listenTypeChanged:(id)sender;
 - (IBAction)listenIPChanged:(id)sender;
 - (IBAction)listenPortChanged:(id)sender;
-- (IBAction)rendezvousChanged:(id)sender;
+- (IBAction)bonjourChanged:(id)sender;
 - (IBAction)displayChanged:(id)sender;
 - (IBAction)checkForUpdatesChanged:(id)sender;
 

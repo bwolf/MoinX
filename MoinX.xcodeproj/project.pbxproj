@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		174B2768065CE31400ED6208 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 174B2766065CE31400ED6208 /* AppDelegate.h */; };
+		2E33C55B0A4D62FA009C46D3 /* pythonlib.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2E33C55A0A4D62FA009C46D3 /* pythonlib.zip */; };
+		2E5CA62507B15DB60084C2FA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2E5CA62407B15DB60084C2FA /* LICENSE */; };
+		2E5CA68E07A959B800541FA2 /* WikiModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5CA68C07A959B800541FA2 /* WikiModel.h */; };
+		2E5CA68F07A959B800541FA2 /* WikiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5CA68D07A959B800541FA2 /* WikiModel.m */; };
+		2E602F2D07A6D3FD00548080 /* Archiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E602F2B07A6D3FD00548080 /* Archiver.h */; };
+		2E602F2E07A6D3FD00548080 /* Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E602F2C07A6D3FD00548080 /* Archiver.m */; };
+		2E6321DA07A17DD40042E197 /* PreferenceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6321D807A17DD40042E197 /* PreferenceController.h */; };
+		2E6321DB07A17DD40042E197 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6321D907A17DD40042E197 /* PreferenceController.m */; };
+		2E6321F207A17F690042E197 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6321F007A17F690042E197 /* Preferences.nib */; };
+		2E6F213907AF6056008156EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6F213707AF6056008156EE /* Localizable.strings */; };
+		2E7796DC079DC2B0007B1F06 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7796DA079DC2B0007B1F06 /* Credits.rtf */; };
+		2E77AA75079DC5D3007B1F06 /* MoinX.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E77AA74079DC5D3007B1F06 /* MoinX.icns */; };
+		2E806B040D01BFA8005A7BB0 /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E806B030D01BFA8005A7BB0 /* libc.dylib */; };
+		2E9442D50A56A18700B8279B /* pythonlib-aux in Resources */ = {isa = PBXBuildFile; fileRef = 2E9442910A56A18600B8279B /* pythonlib-aux */; };
+		2EB7758807B3F60800A40E00 /* MoinX_statusmenuicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D175079C539B008D4F71 /* MoinX_statusmenuicon.tif */; };
+		2EB7758A07B3F60F00A40E00 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		2EB7758B07B3F61100A40E00 /* bin in Resources */ = {isa = PBXBuildFile; fileRef = 2E00AB53079DEF25003240AA /* bin */; };
+		2EB7758C07B3F61200A40E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		2EB7758D07B3F61300A40E00 /* htdocs in Resources */ = {isa = PBXBuildFile; fileRef = 2E00AB57079DEF3A003240AA /* htdocs */; };
+		2EB7758E07B3F61400A40E00 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
+		2EB7759907B3F6CC00A40E00 /* libarchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77AA96079DE14B007B1F06 /* libarchive.a */; };
+		2EB7759B07B3F6D100A40E00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF3A24A07A4790000DD39CA /* libz.dylib */; };
+		2EB7759C07B3F6D400A40E00 /* LICENSE.MoinMoin in Resources */ = {isa = PBXBuildFile; fileRef = 2EEA126507B15C85001C04E9 /* LICENSE.MoinMoin */; };
+		2EB7759D07B3F6D500A40E00 /* LICENSE.Twisted in Resources */ = {isa = PBXBuildFile; fileRef = 2EEA126607B15C85001C04E9 /* LICENSE.Twisted */; };
+		2EB7759E07B3F6E000A40E00 /* instance.tar.bz2 in Resources */ = {isa = PBXBuildFile; fileRef = 2E00A538079DEC7F003240AA /* instance.tar.bz2 */; };
+		2EBCC6B20A4A751A00E88911 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBCC6B10A4A751900E88911 /* libbz2.dylib */; };
+		2EC57C2307947C8E00E19F87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC57C2207947C8E00E19F87 /* AppDelegate.m */; };
+		2EC57C2507947CA200E19F87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC57C2407947CA200E19F87 /* main.m */; };
+		2EDB06F007A2752E00CE24F2 /* Wiki.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDB06EE07A2752E00CE24F2 /* Wiki.h */; };
+		2EDB06F107A2752E00CE24F2 /* Wiki.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB06EF07A2752E00CE24F2 /* Wiki.m */; };
+		2EF0BFEA07C91809007066C6 /* pyrun in Resources */ = {isa = PBXBuildFile; fileRef = 2EF0BFE607C91809007066C6 /* pyrun */; };
+		8D1107280486CEB800E47090 /* MoinX_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* MoinX_Prefix.pch */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		174B2766065CE31400ED6208 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2E00A538079DEC7F003240AA /* instance.tar.bz2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = instance.tar.bz2; sourceTree = "<group>"; };
+		2E00AB53079DEF25003240AA /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
+		2E00AB57079DEF3A003240AA /* htdocs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = htdocs; sourceTree = "<group>"; };
+		2E21CBAE07AEFB9300A225C4 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2E21CBB907AEFC9400A225C4 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/Preferences.nib; sourceTree = "<group>"; };
+		2E33C55A0A4D62FA009C46D3 /* pythonlib.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = pythonlib.zip; sourceTree = "<group>"; };
+		2E5CA62407B15DB60084C2FA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2E5CA68C07A959B800541FA2 /* WikiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiModel.h; sourceTree = "<group>"; };
+		2E5CA68D07A959B800541FA2 /* WikiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiModel.m; sourceTree = "<group>"; };
+		2E602F2B07A6D3FD00548080 /* Archiver.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = Archiver.h; sourceTree = "<group>"; };
+		2E602F2C07A6D3FD00548080 /* Archiver.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = Archiver.m; sourceTree = "<group>"; };
+		2E6321D807A17DD40042E197 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		2E6321D907A17DD40042E197 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		2E6321F107A17F690042E197 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		2E6F213807AF6056008156EE /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E6F214207AF61E7008156EE /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E7796DB079DC2B0007B1F06 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2E77AA74079DC5D3007B1F06 /* MoinX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MoinX.icns; sourceTree = "<group>"; };
+		2E77AA96079DE14B007B1F06 /* libarchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libarchive.a; path = generated/build/lib/libarchive.a; sourceTree = "<group>"; };
+		2E806B030D01BFA8005A7BB0 /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = /usr/lib/libc.dylib; sourceTree = "<absolute>"; };
+		2E9442910A56A18600B8279B /* pythonlib-aux */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "pythonlib-aux"; sourceTree = "<group>"; };
+		2EBCC6B10A4A751900E88911 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = /usr/lib/libbz2.dylib; sourceTree = "<absolute>"; };
+		2EC57C2207947C8E00E19F87 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EC57C2407947CA200E19F87 /* main.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EDB06EE07A2752E00CE24F2 /* Wiki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wiki.h; sourceTree = "<group>"; };
+		2EDB06EF07A2752E00CE24F2 /* Wiki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wiki.m; sourceTree = "<group>"; };
+		2EEA126507B15C85001C04E9 /* LICENSE.MoinMoin */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; path = LICENSE.MoinMoin; sourceTree = "<group>"; };
+		2EEA126607B15C85001C04E9 /* LICENSE.Twisted */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; path = LICENSE.Twisted; sourceTree = "<group>"; };
+		2EF0BFE607C91809007066C6 /* pyrun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pyrun; sourceTree = "<group>"; };
+		2EF3A24A07A4790000DD39CA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
+		2EF8D175079C539B008D4F71 /* MoinX_statusmenuicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MoinX_statusmenuicon.tif; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MoinX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoinX_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MoinX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoinX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				2EB7758A07B3F60F00A40E00 /* AppKit.framework in Frameworks */,
+				2EB7758C07B3F61200A40E00 /* Foundation.framework in Frameworks */,
+				2EB7759907B3F6CC00A40E00 /* libarchive.a in Frameworks */,
+				2EB7759B07B3F6D100A40E00 /* libz.dylib in Frameworks */,
+				2EBCC6B20A4A751A00E88911 /* libbz2.dylib in Frameworks */,
+				2E806B040D01BFA8005A7BB0 /* libc.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2E602F2B07A6D3FD00548080 /* Archiver.h */,
+				2E602F2C07A6D3FD00548080 /* Archiver.m */,
+				174B2766065CE31400ED6208 /* AppDelegate.h */,
+				2EC57C2207947C8E00E19F87 /* AppDelegate.m */,
+				2E6321D807A17DD40042E197 /* PreferenceController.h */,
+				2E6321D907A17DD40042E197 /* PreferenceController.m */,
+				2EDB06EE07A2752E00CE24F2 /* Wiki.h */,
+				2EDB06EF07A2752E00CE24F2 /* Wiki.m */,
+				2E5CA68C07A959B800541FA2 /* WikiModel.h */,
+				2E5CA68D07A959B800541FA2 /* WikiModel.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MoinX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Instiki */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				2E00A43A079DEC52003240AA /* WikiBootstrap */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Instiki;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2EC57C2407947CA200E19F87 /* main.m */,
+				32CA4F630368D1EE00C91783 /* MoinX_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E5CA62407B15DB60084C2FA /* LICENSE */,
+				2E77AA74079DC5D3007B1F06 /* MoinX.icns */,
+				2E7796DA079DC2B0007B1F06 /* Credits.rtf */,
+				2EF8D175079C539B008D4F71 /* MoinX_statusmenuicon.tif */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2E6F213707AF6056008156EE /* Localizable.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				2E6321F007A17F690042E197 /* Preferences.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E806B030D01BFA8005A7BB0 /* libc.dylib */,
+				2EBCC6B10A4A751900E88911 /* libbz2.dylib */,
+				2E77AA96079DE14B007B1F06 /* libarchive.a */,
+				2EF3A24A07A4790000DD39CA /* libz.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E00A43A079DEC52003240AA /* WikiBootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				2E9442910A56A18600B8279B /* pythonlib-aux */,
+				2E33C55A0A4D62FA009C46D3 /* pythonlib.zip */,
+				2EEA126507B15C85001C04E9 /* LICENSE.MoinMoin */,
+				2EEA126607B15C85001C04E9 /* LICENSE.Twisted */,
+				2EF0BFE607C91809007066C6 /* pyrun */,
+				2E00AB57079DEF3A003240AA /* htdocs */,
+				2E00AB53079DEF25003240AA /* bin */,
+				2E00A538079DEC7F003240AA /* instance.tar.bz2 */,
+			);
+			name = WikiBootstrap;
+			path = generated/WikiBootstrap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D1107270486CEB800E47090 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1107280486CEB800E47090 /* MoinX_Prefix.pch in Headers */,
+				174B2768065CE31400ED6208 /* AppDelegate.h in Headers */,
+				2E6321DA07A17DD40042E197 /* PreferenceController.h in Headers */,
+				2EDB06F007A2752E00CE24F2 /* Wiki.h in Headers */,
+				2E602F2D07A6D3FD00548080 /* Archiver.h in Headers */,
+				2E5CA68E07A959B800541FA2 /* WikiModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MoinX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EB1533909F03093001806D0 /* Build configuration list for PBXNativeTarget "MoinX" */;
+			buildPhases = (
+				8D1107270486CEB800E47090 /* Headers */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				2E28594B07996E1B00E19C47 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoinX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Instiki;
+			productReference = 8D1107320486CEB800E47090 /* MoinX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2EB1533D09F03093001806D0 /* Build configuration list for PBXProject "MoinX" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Instiki */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MoinX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2E7796DC079DC2B0007B1F06 /* Credits.rtf in Resources */,
+				2E77AA75079DC5D3007B1F06 /* MoinX.icns in Resources */,
+				2E6321F207A17F690042E197 /* Preferences.nib in Resources */,
+				2E6F213907AF6056008156EE /* Localizable.strings in Resources */,
+				2E5CA62507B15DB60084C2FA /* LICENSE in Resources */,
+				2EB7758807B3F60800A40E00 /* MoinX_statusmenuicon.tif in Resources */,
+				2EB7758B07B3F61100A40E00 /* bin in Resources */,
+				2EB7758D07B3F61300A40E00 /* htdocs in Resources */,
+				2EB7758E07B3F61400A40E00 /* Info.plist in Resources */,
+				2E33C55B0A4D62FA009C46D3 /* pythonlib.zip in Resources */,
+				2EB7759C07B3F6D400A40E00 /* LICENSE.MoinMoin in Resources */,
+				2EB7759D07B3F6D500A40E00 /* LICENSE.Twisted in Resources */,
+				2EB7759E07B3F6E000A40E00 /* instance.tar.bz2 in Resources */,
+				2EF0BFEA07C91809007066C6 /* pyrun in Resources */,
+				2E9442D50A56A18700B8279B /* pythonlib-aux in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E28594B07996E1B00E19C47 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC57C2307947C8E00E19F87 /* AppDelegate.m in Sources */,
+				2EC57C2507947CA200E19F87 /* main.m in Sources */,
+				2E6321DB07A17DD40042E197 /* PreferenceController.m in Sources */,
+				2EDB06F107A2752E00CE24F2 /* Wiki.m in Sources */,
+				2E602F2E07A6D3FD00548080 /* Archiver.m in Sources */,
+				2E5CA68F07A959B800541FA2 /* WikiModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				2E21CBAE07AEFB9300A225C4 /* German */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2E6321F007A17F690042E197 /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6321F107A17F690042E197 /* English */,
+				2E21CBB907AEFC9400A225C4 /* German */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		2E6F213707AF6056008156EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6F213807AF6056008156EE /* English */,
+				2E6F214207AF61E7008156EE /* German */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E7796DA079DC2B0007B1F06 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E7796DB079DC2B0007B1F06 /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EB1533A09F03093001806D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoinX_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = generated/build/include;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = generated/build/lib;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = MoinX;
+				SDKROOT = "$(SDKROOT)";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2EB1533B09F03093001806D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoinX_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = generated/build/include;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = generated/build/lib;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = MoinX;
+				SDKROOT = "$(SDKROOT)";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2EB1533E09F03093001806D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = "$(USER)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		2EB1533F09F03093001806D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EB1533909F03093001806D0 /* Build configuration list for PBXNativeTarget "MoinX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB1533A09F03093001806D0 /* Debug */,
+				2EB1533B09F03093001806D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2EB1533D09F03093001806D0 /* Build configuration list for PBXProject "MoinX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB1533E09F03093001806D0 /* Debug */,
+				2EB1533F09F03093001806D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

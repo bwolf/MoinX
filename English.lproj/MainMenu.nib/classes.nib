@@ -8,6 +8,7 @@
                 goToHomepage = id; 
                 import = id; 
                 quit = id; 
+                showLog = id; 
                 showPreferencePanel = id; 
             }; 
             CLASS = AppDelegate; 

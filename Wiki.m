@@ -23,7 +23,8 @@
 static NSString *MOINX_STORAGE = @"Library/Application Support/MoinX";
 static NSString *MOINX_INSTANCE = @"instance";
 static NSString *TWISTD_START_SCRIPT = @"twistd";
-static NSString *BUNDLE_PYTHON_LIBDIR = @"pythonlib";
+static NSString *BUNDLE_PYTHON_LIB_AUX_DIR = @"pythonlib-aux";
+static NSString *BUNDLE_PYTHON_LIBZIP = @"pythonlib.zip";
 static NSString *BUNDLE_HTDOCS = @"htdocs";
 static NSString *BUNDLE_INSTANCE_TEMPLATE = @"instance.tar.bz2";
 
@@ -187,13 +188,20 @@ static void sig_usr1(int signo)
     // script 'twistd'
     NSString *moinHtdocs =  [[bundle resourcePath]
         stringByAppendingPathComponent:BUNDLE_HTDOCS];
-    NSString *pythonLibDir = [[bundle resourcePath]
-        stringByAppendingPathComponent:BUNDLE_PYTHON_LIBDIR];
-    NSString *twistd = [bundle pathForResource:TWISTD_START_SCRIPT
+	
+    NSString *pythonLibZip = [[bundle resourcePath]
+        stringByAppendingPathComponent:BUNDLE_PYTHON_LIBZIP];
+	NSString *pythonLibAux = [[bundle resourcePath]
+		stringByAppendingPathComponent:BUNDLE_PYTHON_LIB_AUX_DIR];
+    
+	NSString *twistd = [bundle pathForResource:TWISTD_START_SCRIPT
         ofType:nil inDirectory:@"bin"];
 
-    if (pythonLibDir && twistd)
+    if (pythonLibZip && pythonLibAux && twistd)
     {
+		NSString *pythonPathValue =
+			[NSString stringWithFormat:@"%@:%@", pythonLibZip, pythonLibAux];
+		
         NSArray *args = [NSArray arrayWithObjects:
             @"--quiet",
             @"--nodaemon",
@@ -201,7 +209,7 @@ static void sig_usr1(int signo)
             nil];
 
         NSMutableDictionary *env = [model moinxStartupEnvironment];
-        [env setObject:pythonLibDir forKey:@"PYTHONPATH"];
+        [env setObject:pythonPathValue forKey:@"PYTHONPATH"];
         [env setObject:moinHtdocs forKey:@"MOINX_HTDOCS"];
 
         // Setup NSTask
@@ -215,9 +223,9 @@ static void sig_usr1(int signo)
         [task launch];
     }
 
-    if ([model rendezvous])
+    if ([model bonjour])
     {
-        //NSLog(@"announcing with rendezvous");
+        //NSLog(@"announcing with bonjour");
         service = [[NSNetService alloc]
             initWithDomain:@"" // default domain
             type:@"_http._tcp."

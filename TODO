@@ -1,0 +1,22 @@
+- test with python 2.4
+- url?action=test
+- how to get admin rights?
+  acl_rights_before=WikiName:read,write,revert,delete,admin
+- HelpOnConfiguration contains desc. of all settings
+- startmoin.py review
+- xmlrpc?
+- test RSS
+- use --pidfile with twistd, unlink before start
+- trac
+  * remove logo
+  * add components, milestones,...
+  * review auth
+  * send mail on ticket & actions
+- html add:
+  * browse source
+  * bug tracking
+- darcs?
+- darcs & trac?
+- SIGUSR2 on cfgerror?
+- donate, donate to moinmoin instead
+- migration (moinx e.g. prefs, moinmoin e.g. pages, systempages)

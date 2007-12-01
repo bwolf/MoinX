@@ -1,0 +1,5 @@
+This directory contains replicated directory structures for certain
+packages (e.g. MoinMoin) to allow easier extension (e.g. putting
+additional files like plugins or macros) into the Python load path.
+Keep in mind, that required 3rd party packages are load from a zip file
+to reduce the required disk space.

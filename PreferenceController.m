@@ -46,7 +46,7 @@
     [listenType selectCellAtRow:[model listenType] column:0];
     [listenIP setStringValue:[model listenIP]];
     [listenPort setIntValue:[model listenPort]];
-    [rendezvous setIntValue:[model rendezvous]];
+    [bonjour setIntValue:[model bonjour]];
     [display selectItemAtIndex:[model display]];
     [checkForUpdates setIntValue:[model checkForUpdates]];
 
@@ -84,12 +84,12 @@
     }
 }
 
-- (IBAction)rendezvousChanged:(id)sender
+- (IBAction)bonjourChanged:(id)sender
 {
-    //NSLog(@"rendezvousChanged");  
-    if ([model rendezvous] != [rendezvous intValue])
+    //NSLog(@"bonjourChanged");  
+    if ([model bonjour] != [bonjour intValue])
     {
-        [model setRendezvous:[rendezvous intValue]];
+        [model setBonjour:[bonjour intValue]];
     }
 }
 
@@ -203,17 +203,17 @@
     if (lt == LISTEN_TYPE_LOCAL)
     {
         [listenIP setEnabled:FALSE];
-        [rendezvous setEnabled:FALSE];
+        [bonjour setEnabled:FALSE];
     }
     else if (lt == LISTEN_TYPE_ALL)
     {
         [listenIP setEnabled:FALSE];
-        [rendezvous setEnabled:TRUE];
+        [bonjour setEnabled:TRUE];
     }
     else if (lt == LISTEN_TYPE_SPECIFIC)
     {
         [listenIP setEnabled:TRUE];
-        [rendezvous setEnabled:TRUE];
+        [bonjour setEnabled:TRUE];
     }
     else
     {
@@ -227,7 +227,7 @@
     int n, value;
     NSString *tmp;
     size_t len;
-    int u;
+    size_t u;
     const char *rawT;
 
     if ([ipItems count] != 4)
@@ -276,7 +276,7 @@
 {
     NSString *p = [listenPort stringValue];
     const char *raw = [p UTF8String];
-    int n, value;
+    size_t n, value;
     size_t len = strlen(raw);
 
     for (n = 0; n < len; n++)

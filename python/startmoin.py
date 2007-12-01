@@ -7,7 +7,7 @@
         @copyright: 2004 Thomas Waldmann, Oliver Graf, Nir Soffer
         @license: GNU GPL, see COPYING for details.
 
-        @copyright: 2005 Marcus Geiger
+        @copyright: 2005-2006 Marcus Geiger
         $Id: startmoin.py 19 2005-02-20 20:55:03Z bwolf $
 """
 import sys
@@ -22,12 +22,13 @@ from MoinMoin.server.twistedmoin import TwistedConfig, makeApp
 
 class Config(TwistedConfig):
         docs = os.environ['MOINX_HTDOCS']
-        user = 'www-data'
-        group = 'www-data'
+        user = None
+        group = None
         port = int(os.environ['MOINX_LISTEN_PORT'])
         interfaces = os.environ['MOINX_LISTEN_IP'].split(':')
         threads = 10
-        #logPath = 'mointwisted.log'
+        logPath = None #'mointwisted.log'
+        logPath_twisted = None
 
 class MoinXParentMonitor(threading.Thread):
         """Monitor thread to exit the process if the parent dies.
@@ -86,6 +87,6 @@ def moinXDumpEnvironment():
                 print u'%s:%s' % (x, os.environ[x])
 
 # Startup 
-# moinXDumpEnvironment()
+#moinXDumpEnvironment()
 moinXStartParentMonitor()
 application = makeApp(Config)

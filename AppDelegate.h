@@ -45,6 +45,7 @@
 - (IBAction)import:(id)sender;
 - (IBAction)about:(id)sender;
 - (IBAction)checkForUpdates:(id)sender;
+- (IBAction)showLog:(id)sender;
 - (IBAction)quit:(id)sender;
 
 @end
