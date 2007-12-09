@@ -15,8 +15,8 @@
 - html add:
   * browse source
   * bug tracking
-- darcs?
-- darcs & trac?
-- SIGUSR2 on cfgerror?
 - donate, donate to moinmoin instead
 - migration (moinx e.g. prefs, moinmoin e.g. pages, systempages)
+
+
+- 

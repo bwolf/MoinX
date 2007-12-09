@@ -284,6 +284,8 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     [panel setCanSelectHiddenExtension:TRUE];
 
 	[panel setBecomesKeyOnlyIfNeeded:TRUE];
+	[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+
     if ([panel runModal] == NSFileHandlingPanelOKButton)
     {
         //NSLog(@"Ok: %@", [panel filename]);
@@ -305,10 +307,44 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     }
 }
 
+static void moveFileToUserTrash(NSString *filePath)
+{
+	NSLog(@"Moving %@ to trash", filePath);
+	
+    CFURLRef        trashURL;
+    FSRef           trashFolderRef;
+    CFStringRef     trashPath;
+    OSErr           err;
+    NSFileManager   *mgr = [NSFileManager defaultManager];
+	
+    err = FSFindFolder(kUserDomain, kTrashFolderType, kDontCreateFolder, &trashFolderRef);
+    if (err == noErr)
+	{
+		trashURL = CFURLCreateFromFSRef(kCFAllocatorSystemDefault, &trashFolderRef);
+		if (trashURL)
+		{
+			trashPath = CFURLCopyFileSystemPath (trashURL, kCFURLPOSIXPathStyle);
+			if (![mgr movePath:filePath 
+						toPath:[(NSString *) trashPath
+								stringByAppendingPathComponent:[filePath lastPathComponent]] 
+					   handler:nil])
+			{
+				NSLog(@"Could not move %@ to trash", filePath);
+			}
+        }
+        if (trashPath) 
+		{
+            CFRelease(trashPath);
+        }
+        CFRelease(trashURL);
+    }
+}
+
 - (IBAction)import:(id)sender
 {
     //NSLog(@"import");
-    NSString *workingDirecotry = [wiki instanceDirectory];
+    NSString *workingDirectory = [wiki instanceDirectory];
+	NSString *subDir = @"data";
 
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     [panel setTitle:NSLocalizedString(@"DataImport", @"DataImport")];
@@ -321,10 +357,25 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     [panel setCanSelectHiddenExtension:TRUE];
 
 	[panel setBecomesKeyOnlyIfNeeded:TRUE];
+	[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+
     if ([panel runModal] == NSFileHandlingPanelOKButton)
     {
         //NSLog(@"Ok: %@", [panel filename]);
-        Archiver *archiver = [[[Archiver alloc] initWithWorkingDirectory:workingDirecotry] autorelease];
+		
+		NSFileManager *fm = [NSFileManager defaultManager];
+		NSString *dataDir = [workingDirectory stringByAppendingPathComponent:subDir];
+		BOOL isDir = FALSE;
+		if ([fm fileExistsAtPath:dataDir isDirectory:&isDir])
+		{
+			if (isDir)
+			{
+				NSLog(@"OK, will remove data directory");
+				moveFileToUserTrash(dataDir);
+			}
+		}
+
+        Archiver *archiver = [[[Archiver alloc] initWithWorkingDirectory:workingDirectory] autorelease];
         [archiver extract:[panel filename]];
 
         int res = NSRunAlertPanel(
@@ -395,6 +446,8 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
         NSLog(@"MoinX is up to date");
         if (sender != nil)
         {
+			[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+
             NSRunAlertPanel(
                 NSLocalizedString(@"NewVersion", @"New version"),
                 NSLocalizedString(@"NewestVersionNotify",
@@ -412,6 +465,7 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
                               @"Would you like to download the new veresion?"),
             latestVersionNumber];
 
+		[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
         int button = NSRunAlertPanel(
             NSLocalizedString(@"NewVersion", @"New version"),
             msg,
@@ -424,13 +478,6 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
                 URLWithString:latestVersionDownloadURI]];
         }
     }
-}
-
-- (IBAction)showLog:(id)sender
-{
-	[[NSWorkspace sharedWorkspace] openFile:
-		[NSString stringWithFormat:@"/Library/Logs/Console/%u/console.log",
-			getuid()]];
 }
 
 - (IBAction)quit:(id)sender
