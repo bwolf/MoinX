@@ -1,4 +1,4 @@
-/* $Id: Wiki.m 19 2005-02-20 20:55:03Z bwolf $
+/* $Id$
  *
  * Copyright 2005 Marcus Geiger
  *

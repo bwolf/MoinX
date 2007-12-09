@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $Id: makedmg.sh 4 2005-02-04 17:58:58Z bwolf $
+# $Id$
 #
 #  Copyright 2005 Marcus Geiger
 #
@@ -16,7 +16,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-if [ ! -d MoinX.xcode ]; then
+if [ ! -d MoinX.xcodeproj ]; then
     echo Script must be called from the project root directory
     exit 64
 fi
@@ -36,8 +36,8 @@ rm -f $dmg
 rm -f $i_dmg
 hdiutil create -size $size -fs HFS+ -volname MoinX -ov $i_dmg
 hdiutil mount $i_dmg
-ditto build/MoinX.app /Volumes/MoinX/MoinX.app
-hdiutil unmount /Volumes/MoinX
+ditto build/Release/MoinX.app /Volumes/MoinX/MoinX.app
+hdiutil eject /Volumes/MoinX
 hdiutil convert -format UDZO -o $dmg $i_dmg
 hdiutil internet-enable -yes $dmg
 rm $i_dmg

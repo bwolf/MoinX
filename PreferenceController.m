@@ -1,4 +1,4 @@
-/* $Id: PreferenceController.m 7 2005-02-05 18:45:05Z bwolf $
+/* $Id$
  *
  * Copyright 2005 Marcus Geiger
  *

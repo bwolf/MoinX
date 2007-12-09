@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $Id: clean.sh 4 2005-02-04 17:58:58Z bwolf $
+# $Id$
 #
 #  Copyright 2005 Marcus Geiger
 #
@@ -16,7 +16,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-if [ ! -d MoinX.xcode ]; then
+if [ ! -d MoinX.xcodeproj ]; then
     echo Script must be called from the project root directory
     exit 64
 fi

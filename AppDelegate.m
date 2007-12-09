@@ -1,4 +1,4 @@
-/* $Id: AppDelegate.m 15 2005-02-14 19:05:47Z bwolf $
+/* $Id$
  * 
  * Copyright 2005 Marcus Geiger
  *

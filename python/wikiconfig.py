@@ -4,7 +4,7 @@
 		@license: GNU GPL, see COPYING for details.
 
 		@copyright: 2005-2006 Marcus Geiger
-		$Id: wikiconfig.py 19 2005-02-20 20:55:03Z bwolf $
+		$Id$
 """
 
 from MoinMoin.multiconfig import DefaultConfig

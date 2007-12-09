@@ -1,4 +1,4 @@
-/* $Id: Archiver.m 8 2005-02-05 18:46:15Z bwolf $
+/* $Id$
  * 
  * Copyright 2005 Marcus Geiger
  *

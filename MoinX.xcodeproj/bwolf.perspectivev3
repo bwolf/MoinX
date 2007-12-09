@@ -233,6 +233,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -282,8 +284,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>14</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,14 +318,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>2E806B070D01C3B7005A7BB0</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>Archiver.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>2E806B080D01C3B7005A7BB0</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>Archiver.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2ECCAEDD0D0C2FCB003FE00A</string>
+										<string>2EED67FE0D0C56100080684C</string>
 										<key>history</key>
 										<array>
 											<string>2E1016350D01EA06005A1EDA</string>
@@ -347,25 +347,21 @@
 											<string>2ECCAED00D0C2FCB003FE00A</string>
 											<string>2ECCAED10D0C2FCB003FE00A</string>
 											<string>2ECCAED20D0C2FCB003FE00A</string>
-											<string>2ECCAED30D0C2FCB003FE00A</string>
+											<string>2ECCAEE50D0C51BF003FE00A</string>
+											<string>2ECCAEF80D0C555E003FE00A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>2E1016380D01EA06005A1EDA</string>
 											<string>2ECCAE790D0C1F2D003FE00A</string>
 											<string>2ECCAE840D0C21D1003FE00A</string>
-											<string>2ECCAE850D0C21D1003FE00A</string>
-											<string>2ECCAEC70D0C2F3A003FE00A</string>
 											<string>2ECCAEC80D0C2F3A003FE00A</string>
-											<string>2ECCAED40D0C2FCB003FE00A</string>
 											<string>2ECCAED50D0C2FCB003FE00A</string>
 											<string>2ECCAED60D0C2FCB003FE00A</string>
 											<string>2ECCAED70D0C2FCB003FE00A</string>
 											<string>2ECCAED80D0C2FCB003FE00A</string>
-											<string>2ECCAED90D0C2FCB003FE00A</string>
 											<string>2ECCAEDA0D0C2FCB003FE00A</string>
 											<string>2ECCAEDB0D0C2FCB003FE00A</string>
-											<string>2ECCAEDC0D0C2FCB003FE00A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -404,7 +400,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {811, 212}}</string>
+										<string>{{10, 27}, {792, 47}}</string>
+										<key>RubberWindowFrame</key>
+										<string>16 151 1036 843 0 0 1680 1028 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -459,8 +457,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {792, 47}}</string>
-										<key>RubberWindowFrame</key>
-										<string>16 151 1036 843 0 0 1680 1028 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -488,11 +484,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2ECCAE870D0C21D1003FE00A</string>
+				<string>2EED67FB0D0C55C10080684C</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>2ECCAE880D0C21D1003FE00A</string>
+				<string>2EED67FC0D0C55C10080684C</string>
 				<string>2E806B070D01C3B7005A7BB0</string>
-				<string>2ECCAE890D0C21D1003FE00A</string>
+				<string>2EED67FD0D0C55C10080684C</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -674,9 +670,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2ECCAE960D0C23D0003FE00A</string>
-		<string>2ECCAE970D0C23D0003FE00A</string>
-		<string>2ECCAE980D0C23D0003FE00A</string>
 		<string>/Users/bwolf/Tmp/moinx/MoinX.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

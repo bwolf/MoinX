@@ -8,7 +8,7 @@
         @license: GNU GPL, see COPYING for details.
 
         @copyright: 2005-2006 Marcus Geiger
-        $Id: startmoin.py 19 2005-02-20 20:55:03Z bwolf $
+        $Id$
 """
 import sys
 sys.path.insert(0, '.')
