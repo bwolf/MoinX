@@ -261,10 +261,11 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     {
         preferenceController = [[PreferenceController alloc] initWithModel:model];
     }
-    [preferenceController showWindow:self];
-	[[preferenceController window] makeKeyAndOrderFront:self];	
+
 	[NSApp activateIgnoringOtherApps: YES];
 
+    [preferenceController showWindow:self];
+	[[preferenceController window] makeKeyAndOrderFront:self];	
 }
 
 - (IBAction)export:(id)sender
@@ -284,7 +285,7 @@ static NSString *MOINX_VERSION_DOWNLOAD_URI_KEY = @"LatestVersionDownloadURI";
     [panel setCanSelectHiddenExtension:TRUE];
 
 	[panel setBecomesKeyOnlyIfNeeded:TRUE];
-	[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+	[NSApp activateIgnoringOtherApps:YES];
 
     if ([panel runModal] == NSFileHandlingPanelOKButton)
     {
@@ -357,7 +358,7 @@ static void moveFileToUserTrash(NSString *filePath)
     [panel setCanSelectHiddenExtension:TRUE];
 
 	[panel setBecomesKeyOnlyIfNeeded:TRUE];
-	[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+	[NSApp activateIgnoringOtherApps:YES];
 
     if ([panel runModal] == NSFileHandlingPanelOKButton)
     {
