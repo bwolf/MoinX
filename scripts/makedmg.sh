@@ -16,6 +16,8 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
+set -e
+
 if [ ! -d MoinX.xcodeproj ]; then
     echo Script must be called from the project root directory
     exit 64
@@ -31,12 +33,16 @@ base=generated/release
 dmg=$base/MoinX.dmg
 i_dmg=$base/MoinX_image.dmg
 
-mkdir $base
+if [ ! -d "$base" ]; then mkdir "$base"; fi
 rm -f $dmg
 rm -f $i_dmg
 hdiutil create -size $size -fs HFS+ -volname MoinX -ov $i_dmg
 hdiutil mount $i_dmg
 ditto build/Release/MoinX.app /Volumes/MoinX/MoinX.app
+ditto Release-Readme.txt /Volumes/MoinX/Readme.txt
+for rn in Releasenotes-*; do
+	ditto "$rn" "/Volumes/MoinX/$rn"
+done
 hdiutil eject /Volumes/MoinX
 hdiutil convert -format UDZO -o $dmg $i_dmg
 hdiutil internet-enable -yes $dmg
