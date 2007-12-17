@@ -282,7 +282,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>11</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -323,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>2E806B070D01C3B7005A7BB0</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppDelegate.m</string>
+								<string>WikiModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>2E806B080D01C3B7005A7BB0</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppDelegate.m</string>
+										<string>WikiModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2EED68070D0C62F90080684C</string>
+										<string>2EAE17940D1657B300B1AE82</string>
 										<key>history</key>
 										<array>
 											<string>2E1016350D01EA06005A1EDA</string>
@@ -348,7 +348,8 @@
 											<string>2ECCAED20D0C2FCB003FE00A</string>
 											<string>2ECCAEE50D0C51BF003FE00A</string>
 											<string>2EED68050D0C62F90080684C</string>
-											<string>2ECCAECD0D0C2FCB003FE00A</string>
+											<string>2EAE17910D1657B300B1AE82</string>
+											<string>2EAE17920D1657B300B1AE82</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -363,6 +364,7 @@
 											<string>2ECCAEDA0D0C2FCB003FE00A</string>
 											<string>2ECCAEDB0D0C2FCB003FE00A</string>
 											<string>2EED68060D0C62F90080684C</string>
+											<string>2EAE17930D1657B300B1AE82</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -485,11 +487,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2EED68080D0C62F90080684C</string>
+				<string>2EAE178E0D16566E00B1AE82</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>2EED68090D0C62F90080684C</string>
+				<string>2EAE178F0D16566E00B1AE82</string>
 				<string>2E806B070D01C3B7005A7BB0</string>
-				<string>2EED680A0D0C62F90080684C</string>
+				<string>2EAE17900D16566E00B1AE82</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>

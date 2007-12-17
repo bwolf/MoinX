@@ -66,6 +66,7 @@ static NSString *MOINX_ENVIRONMENT_PREFIX = @"MOINX_";
         //@"YourLoginameHere:read,write,admin,delete,revert", @"acl_rights_before",
         //@"",                    @"acl_rights_after",
 		// --------------------------------------------------------------------
+		/* B */ @"0",			@"acl_enabled", // Now by def. en. in MoinMoin but not in MoinX 1.0!
 		/* S */	@"Trusted:read,write,delete,revert " // trailing space needed
 				@"Known:read,write,delete,revert All:read,write",
 								@"acl_rights_default",
